@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Resume</title>
+	My Resume
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
