@@ -111,44 +111,21 @@
             margin-bottom: 10px;
         }
         
-        /* Social media icon styles */
-        .social-media-icons {
-            display: flex;
-            align-items: center;
-        }
-        
-        .social-media-icons li:not(:last-child) {
-            margin-right: 20px;
-        }
-        
-        .clients-section {
-          text-align: center;
-          margin: 50px 0;
-        }
-
-        .clients-container {
-          white-space: nowrap;
+        .clients {
           overflow-x: scroll;
-          -webkit-overflow-scrolling: touch;
-          padding: 10px;
+          white-space: nowrap;
+          padding: 20px 0;
         }
 
-        .clients-container::-webkit-scrollbar {
-          height: 10px;
-        }
-
-        .clients-container::-webkit-scrollbar-thumb {
-          background-color: #ccc;
-          border-radius: 10px;
-        }
-
-        .clients-container img {
+        .clients-wrapper {
           display: inline-block;
-          height: 80px;
-          margin: 10px;
-          vertical-align: middle;
         }
 
+        .clients img {
+          display: inline-block;
+          width: 100px;
+          margin-right: 20px;
+        }
         
     </style>
 </head>
@@ -269,9 +246,9 @@
         </section>
         
         <section>
-        <div class="clients-section">
+        <div class="clients">
             <h2>Clients Worked For</h2>
-            <div class="clients-container">
+            <div class="clients-wrapper">
             <img src="https://www.gometrics-instruments.com/wp-content/uploads/Amex.png" alt="American Express">
             <img src="https://4.bp.blogspot.com/-z4RGgNjUfok/U4_u_2xJG1I/AAAAAAAAGbc/_YHBR_q0tFE/s1600/pnc_logo.jpg" alt="PNC">
             <img src="https://i1.wp.com/deepinthecode.com/wp-content/uploads/2018/05/citrix.jpg?resize=800%2C600&ssl=1img/Citrix.png" alt="Citrix">
