@@ -111,32 +111,23 @@
             margin-bottom: 10px;
         }
         
-        .clients {
-          white-space: nowrap;
-          padding: 20px 0;
+        .slider {
           width: 100%;
           overflow: hidden;
         }
 
-        .clients-wrapper {
-          display: inline-block;
-        }
-
-        .clients img {
-          display: inline-block;
-          position: relative;
-          width: 100px;
-          margin-right: 20px;
-          animation: slide 30s linear infinite;
+        .slider img {
+          float: left;
+          width: 33.33%; /* set the width based on the number of images */
+          animation: slide 10s linear infinite; /* adjust the duration as per your requirement */
         }
         
-
         @keyframes slide {
           0% {
-            left: 0;
+            transform: translateX(0);
           }
           100% {
-            left: 0%;
+            transform: translateX(-100%); /* adjust the percentage based on the number of images */
           }
         }
         
@@ -259,9 +250,9 @@
         </section>
         
         <section>
-            <div class="clients">
+            <div class="container">
             <h2>Clients Worked For</h2>
-            <div class="clients-wrapper">
+            <div class="slider">
             <img src="https://www.gometrics-instruments.com/wp-content/uploads/Amex.png" alt="American Express">
             <img src="https://4.bp.blogspot.com/-z4RGgNjUfok/U4_u_2xJG1I/AAAAAAAAGbc/_YHBR_q0tFE/s1600/pnc_logo.jpg" alt="PNC">
             <img src="https://i1.wp.com/deepinthecode.com/wp-content/uploads/2018/05/citrix.jpg?resize=800%2C600&ssl=1img/Citrix.png" alt="Citrix">
