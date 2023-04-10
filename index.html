@@ -111,29 +111,52 @@
             margin-bottom: 10px;
         }
         
-        .slider {
-          width: 100%;
-          overflow: hidden;
+        div.neat {
+            font-size: 500px;
+            width: 1em;
+            height: 200px;
+            overflow: hidden;
         }
 
-        .slider img {
-          float: left;
-          animation: slide 10s linear infinite; /* adjust the duration as per your requirement */
-          width: 30%;
+        div.neat > div {
+            position: relative;
+            left: 0;
+            width: 4em;
+            -webkit-animation: loop 10s infinite;
+            -moz-animation: loop 10s infinite;
         }
-        
-        @keyframes slide {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-100%); /* adjust the percentage based on the number of images */
-          }
+
+        div.neat > div > img {
+            width: 1em;
+            display: block;
+            float: left;
+        }
+
+        @-webkit-keyframes loop {
+            0% { left: 0; }
+            20% { left: 0; }
+            25% { left: -1em; }
+            45% { left: -1em; }
+            50% { left: -2em; }
+            70% { left: -2em; }
+            75% { left: -3em; }
+            95% { left: -3em; }
+        }
+
+        @-moz-keyframes loop {
+            0% { left: 0; }
+            20% { left: 0; }
+            25% { left: -1em; }
+            45% { left: -1em; }
+            50% { left: -2em; }
+            70% { left: -2em; }
+            75% { left: -3em; }
+            95% { left: -3em; }
         }
         
     </style>
-</head>
-<body>
+    </head>
+    <body>
     <header>
         <div class="container">
             <h1>Rohan Kumar</h1>
@@ -250,9 +273,9 @@
         </section>
         
         <section>
-            <div class="container">
+            <div class="neat">
             <h2>Clients Worked For</h2>
-            <div class="slider">
+            <div>
             <img src="https://www.gometrics-instruments.com/wp-content/uploads/Amex.png" alt="American Express">
             <img src="https://4.bp.blogspot.com/-z4RGgNjUfok/U4_u_2xJG1I/AAAAAAAAGbc/_YHBR_q0tFE/s1600/pnc_logo.jpg" alt="PNC">
             <img src="https://i1.wp.com/deepinthecode.com/wp-content/uploads/2018/05/citrix.jpg?resize=800%2C600&ssl=1img/Citrix.png" alt="Citrix">
