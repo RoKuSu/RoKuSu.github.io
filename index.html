@@ -112,24 +112,26 @@
         }
         
         div.neat {
-          font-size: 500px;
-          left: 0;
-          width: 100%;
-          height: auto;
-          overflow: hidden;
-        }
+    font-size: 500px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    line-height: 0; /* Add this line to remove space between images */
+}
 
-        div.neat > div {
-          position: relative;
-          left: 0;
-          -webkit-animation: loop 8s infinite;
-          -moz-animation: loop 8s infinite;
-        }
+div.neat > div {
+    position: relative;
+    left: 0;
+    -webkit-animation: loop 8s infinite;
+    -moz-animation: loop 8s infinite;
+}
 
-        div.neat > div > img {
-          width: .25em;
-          height: .25em;
-          }
+div.neat > div > img {
+    width: .25em;
+    height: .25em;
+    vertical-align: middle; /* Add this line to remove space at the top and bottom */
+}
 
         @-webkit-keyframes loop {
           0% {
