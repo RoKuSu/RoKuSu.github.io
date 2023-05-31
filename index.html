@@ -113,13 +113,14 @@
         
         div.neat {
             font-size: 500px;
-            width: 1em;
+            width: 100%;
             height: auto;
             overflow: hidden;
         }
 
         div.neat > div {
             position: relative;
+            white-space: nowrap;
             left: 0;
             width: 100%;
             -webkit-animation: loop 8s infinite;
@@ -134,20 +135,22 @@
         }
 
         @-webkit-keyframes loop {
-            0% { left: 0; }
-            10% { left: 0; }
-            40% { left: -1em; }
-            70% { left: -2em; }
-            100% { left: -3em; }
-            }
+          0% {
+            left: 0;
+          }
+          100% {
+            left: -100%;
+          }
+        }
 
         @-moz-keyframes loop {
-             0% { left: 0; }
-            10% { left: 0; }
-            40% { left: -1em; }
-            70% { left: -2em; }
-            100% { left: -3em; }
-            }
+          0% {
+            left: 0;
+          }
+          100% {
+            left: -100%;
+          }
+        }
 
         
     </style>
