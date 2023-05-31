@@ -112,22 +112,25 @@
         }
         
         div.neat {
-            font-size: 500px;
-            width: 100%;
-            height: auto;
-            overflow: hidden;
+          font-size: 500px;
+          width: 100%;
+          height: auto;
+          overflow: hidden;
         }
 
         div.neat > div {
-            position: relative;
-            -webkit-animation: loop 8s infinite;
-            -moz-animation: loop 8s infinite;
+          position: relative;
+          white-space: nowrap;
+          -webkit-animation: loop 8s infinite;
+          -moz-animation: loop 8s infinite;
         }
 
         div.neat > div > img {
-            width: .25em;
-            height: .25em;
-            }
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          margin-right: 10px;
+        }
 
         @-webkit-keyframes loop {
           0% {
@@ -146,6 +149,7 @@
             left: -100%;
           }
         }
+
 
         
     </style>
